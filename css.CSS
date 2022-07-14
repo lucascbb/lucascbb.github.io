@@ -19,6 +19,8 @@ html, body{
 
 .nome{
     border-bottom: 2px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
     
 }
 h1{
@@ -64,12 +66,18 @@ a{
     color: rgb(255, 255, 255);
     background-color: rgb(240, 69, 69);
    
+
+   
 }
 .link1{
-    padding: 20px; 
-    position: absolute;
-    left: 950px;
-    top: 400px;
+    padding: 2vh 3vh 2vh 3vh;
+    text-align: center;
+    position: relative;
+    left: 730px;
+    top: 280px;
+    border-radius: 20px;
+    text-decoration: none;
+    
 }
 .link1:hover {
     background-color: rgb(252, 252, 252);
@@ -77,10 +85,13 @@ a{
 }
 
 .link2{
-    padding: 20px;
-    position: absolute;
+    padding: 2vh 3vh 2vh 3vh;
+    text-align: center;
+    position: relative;
     left: 750px;
-    top: 400px;
+    top: 280px;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 .link2:hover:hover {
