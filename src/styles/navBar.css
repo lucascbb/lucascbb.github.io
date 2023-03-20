@@ -1,0 +1,162 @@
+.paiNavBar {
+    margin-top: -20px;
+    padding: 0;
+}
+
+.btn {
+    all: unset;
+    position: absolute;
+    font-size: 50px;
+    top: 20px;
+    left: 20px;
+}
+
+.btnFalse {
+    all: unset;
+    animation-name: example2Btn;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    position: absolute;
+    font-size: 50px;
+    top: 20px;
+    left: 20px;
+}
+
+@keyframes example2Btn {
+    0%   { left: 220px;}
+    100%   { left: 20px;}
+}
+
+.btnTrue {
+    all: unset;
+    animation-name: example2;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    animation-duration: 3s;
+    position: absolute;
+    font-size: 50px;
+    top: 20px;
+    left: 20px;
+}
+
+@keyframes example2 {
+    0%   { left: 20px;}
+    100%   { left: 220px;}
+}
+
+.nav {
+    position: absolute;
+    left: -220px;
+    width: 200px;
+    height: 120%;
+    background-color: rgb(33, 38, 45);
+}
+
+.navFalse {
+    animation-name: navDesactive;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    position: absolute;
+    left: -220px;
+    width: 200px;
+    height: 120%;
+    background-color: rgb(33, 38, 45);
+}
+
+@keyframes navDesactive {
+    0%   { left: 0px;}
+    100%   { left: -220px;}
+}
+
+.navTrue {
+    animation-name: navActive;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    position: absolute;
+    left: 0;
+    width: 220px;
+    height: 120%;
+    background-color: rgb(33, 38, 45);
+}
+
+@keyframes navActive {
+    0%   { left: -220px;}
+    100%   { left: 0px;}
+}
+
+.divBar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 960px;
+    background-color: rgb(59, 69, 83);
+  }
+  
+  .name1 {
+    text-align: center;
+    font-size: 3.2vw;
+    color: rgb(0, 0, 0);
+  }
+  
+  .name2 {
+    text-align: center;
+    font-size: 6.2vw;
+    color: rgb(0, 0, 0);
+  }
+  
+  .name3 {
+    text-align: center;
+    font-size: 4.6vw;
+    color: rgb(0, 0, 0);
+  }
+
+  .links {
+    margin: 35px 0 0 0px;
+  }
+
+  .liLink {
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .liLink:hover {
+    background-color: rgb(197, 197, 197);
+  }
+
+  .linkNav {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .linkNav:hover {
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+  }
+ 
+  .iconLink1 {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px 0;
+  }
+
+  .iconLink2 {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px 0;
+  }
+
+  .iconLink3 {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px 0;
+  }
+
+  .iconLink4 {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px 0;
+  }
+  

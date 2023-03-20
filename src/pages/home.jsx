@@ -1,16 +1,19 @@
-import Header from '../components/header';
+import Memoji from './memoji';
+import NavBar from '../components/navBar';
+import React from 'react';
 
-function Counter() {
-
+function Home() {
   return (
     <div>
-      <Header />
-      <h1>Introducao sobre mim</h1>
-      <h1>Projetos</h1>
-      <h1>Contato</h1>
-      <h1>Habilidades</h1>
+      <NavBar />
+      <Memoji/>
+      <div className="divBar">
+          <h1 className="name1">HELLO EVERYBODY,</h1>
+          <h1 className="name2">I`M LUCAS</h1>
+          <h1 className="name3">BAROQUELLO</h1>
+      </div>
     </div>
-  );
+  )
 }
 
-export default Counter;
+export default Home;
