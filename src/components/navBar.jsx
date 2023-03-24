@@ -31,22 +31,30 @@ const handleClick = () => {
       </button>
       <nav className={ classBar }>
         <ul className='links'>
-          <li className='liLink'>
-            <HiHome className='iconLink1'/>
-            <Link to="/" className='linkNav'>Início</Link>
-          </li>
-          <li className='liLink'>
-            <IoMdContact className='iconLink2'/>
-            <Link to="/sobre" className='linkNav'>Sobre Mim</Link>
-          </li>
-          <li className='liLink'>
-            <MdContactMail className='iconLink3'/>
-            <Link to="/contato" className='linkNav'>Contato</Link>
-          </li>
-          <li className='liLink'>
-            <BsFileEarmarkCode className='iconLink4'/>
-            <Link to="/projetos" className='linkNav'>Projetos</Link>
-          </li>
+          <Link to="/" className='linkNav'>
+            <li className='liLink'>
+              <HiHome className='iconLink1'/>
+              Início
+            </li>
+          </Link>
+          <Link to="/sobre" className='linkNav'>
+            <li className='liLink'>
+              <IoMdContact className='iconLink2'/>
+            Sobre Mim
+            </li>
+          </Link>
+          <Link to="/contato" className='linkNav'>
+            <li className='liLink'>
+              <MdContactMail className='iconLink3'/>
+            Contato
+            </li>
+          </Link>
+          <Link to="/projetos" className='linkNav'>
+            <li className='liLink'>
+              <BsFileEarmarkCode className='iconLink4'/>
+              Projetos
+            </li>
+          </Link>
         </ul>
       </nav>
     </div> 

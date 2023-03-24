@@ -15,7 +15,7 @@
     all: unset;
     animation-name: example2Btn;
     animation-fill-mode: forwards;
-    animation-duration: 3s;
+    animation-duration: 2s;
     position: absolute;
     font-size: 50px;
     top: 20px;
@@ -31,8 +31,7 @@
     all: unset;
     animation-name: example2;
     animation-fill-mode: forwards;
-    animation-delay: 0.1s;
-    animation-duration: 3s;
+    animation-duration: 2s;
     position: absolute;
     font-size: 50px;
     top: 20px;
@@ -55,12 +54,12 @@
 .navFalse {
     animation-name: navDesactive;
     animation-fill-mode: forwards;
-    animation-duration: 3s;
+    animation-duration: 2s;
     position: absolute;
     left: -220px;
     width: 200px;
     height: 120%;
-    background-color: rgb(33, 38, 45);
+    background-color: #3B4553;
 }
 
 @keyframes navDesactive {
@@ -71,12 +70,12 @@
 .navTrue {
     animation-name: navActive;
     animation-fill-mode: forwards;
-    animation-duration: 3s;
+    animation-duration: 2s;
     position: absolute;
     left: 0;
     width: 220px;
     height: 120%;
-    background-color: rgb(33, 38, 45);
+    background-color: #3B4553;
 }
 
 @keyframes navActive {
@@ -90,7 +89,7 @@
     flex-direction: column;
     width: 50%;
     height: 960px;
-    background-color: rgb(59, 69, 83);
+    background-color: #5A7287;
   }
   
   .name1 {
@@ -133,7 +132,7 @@
   
   .linkNav:hover {
     text-decoration: none;
-    color: rgb(192, 192, 192);
+    color: rgb(76, 76, 76);
   }
  
   .iconLink1 {
