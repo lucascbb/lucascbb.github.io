@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import { useContext } from 'react';
 import '../styles/lightMode.css';
+import ThemeContext from '../context/ThemeContext';
 
 function LightMode() {
-    const [light, setLight] = useState(false)
+    const { light, setLight } = useContext(ThemeContext)
 
     const funcLight = () => {
-        setLight(true);
-        if (light) { setLight(false) }
+        setLight (true);
+        if (light) { setLight (false) }
     }
 
   return (

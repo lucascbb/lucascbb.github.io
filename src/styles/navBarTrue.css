@@ -89,22 +89,40 @@
     flex-direction: column;
     width: 50%;
     height: 960px;
-    background-color: #5A7287;
+    background-color: #3B4553;
   }
   
-  .name1 {
+  .name1True {
+    text-align: center;
+    font-size: 3.2vw;
+    color: rgb(255, 255, 255);
+  }
+  
+  .name2True {
+    text-align: center;
+    font-size: 6.2vw;
+    color: rgb(255, 255, 255);
+  }
+  
+  .name3True {
+    text-align: center;
+    font-size: 4.6vw;
+    color: rgb(255, 255, 255);
+  }
+
+  .name1False {
     text-align: center;
     font-size: 3.2vw;
     color: rgb(0, 0, 0);
   }
   
-  .name2 {
+  .name2False {
     text-align: center;
     font-size: 6.2vw;
     color: rgb(0, 0, 0);
   }
   
-  .name3 {
+  .name3False {
     text-align: center;
     font-size: 4.6vw;
     color: rgb(0, 0, 0);

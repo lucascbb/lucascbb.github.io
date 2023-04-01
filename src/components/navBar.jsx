@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/navBar.css';
+import '../styles/navBarTrue.css';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import  { MdOutlineClose, MdContactMail } from 'react-icons/md'
 import { HiHome } from 'react-icons/hi'
