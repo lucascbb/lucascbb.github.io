@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navBarTrue.css';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import  { MdOutlineClose, MdContactMail } from 'react-icons/md'
+import { MdOutlineClose, MdContactMail } from 'react-icons/md'
 import { HiHome } from 'react-icons/hi'
 import { IoMdContact } from 'react-icons/io'
 import { BsFileEarmarkCode } from 'react-icons/bs'
+import ThemeContext from '../context/ThemeContext';
+import { useContext } from 'react';
 
 function NavBar() {
 const [icon, setIcon] = useState(false)
 const [classBar, setClassBar] = useState('nav')
 const [classBtn, setClassBtn] = useState('btn')
+const { light } = useContext(ThemeContext)
 
 const handleClick = () => {
   setClassBar('navTrue')
@@ -24,7 +27,7 @@ const handleClick = () => {
   return (
     <div className='paiNavBar'>
       <button  onClick={ handleClick } className={ classBtn }>
-        {icon ? <MdOutlineClose/> : <RxHamburgerMenu/> }
+        {icon ? <MdOutlineClose color={light ? "white" : "black"} /> : <RxHamburgerMenu color={light ? "white" : "black"}/> }
         <div className='navBar1'></div>
         <div className='navBar2'></div>
         <div className='navBar3'></div>
@@ -57,6 +60,7 @@ const handleClick = () => {
           </Link>
         </ul>
       </nav>
+      <div className={ light ? "darkModeTrue" : "darkModeFalse" }></div>
     </div> 
   );
 }

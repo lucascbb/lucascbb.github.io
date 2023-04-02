@@ -2,6 +2,7 @@ import emoji from '../images/semtitulo.png'
 import olho1 from '../images/olho.png'
 import olho2 from '../images/olho.png'
 import React, { useEffect } from 'react';
+import '../styles/memoji.css'
 
 function Memoji() {
   useEffect(() => {
@@ -38,6 +39,7 @@ function Memoji() {
         <img src={ olho1 } alt='' id='olho1' />
         <img src={ olho2 } alt='' id='olho2' />
       </div>
+      <div className='fundoOlhos'></div>
     </div>
   )
 }

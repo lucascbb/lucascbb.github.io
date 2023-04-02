@@ -1,0 +1,32 @@
+.contactPai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 10px;
+}
+
+.titleContact {
+    font-size: 6rem;
+}
+
+.iconContact {
+    margin: 20px;
+}
+
+.iconCo {
+    margin: 0 20px -4px 0;
+}
+
+.linkContact{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.linkContact:hover{
+    color: black;
+    text-decoration: underline;
+}
