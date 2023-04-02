@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import '../styles/lightMode.css';
 import ThemeContext from '../context/ThemeContext';
+import { CiLight, CiDark } from 'react-icons/ci'
 
 function LightMode() {
     const { light, setLight } = useContext(ThemeContext)
@@ -14,7 +15,7 @@ function LightMode() {
     <div>
         <label className="switch">
             <input type="checkbox" checked={ light } onChange={ funcLight } />
-            <span className="slider round"></span>
+            <span className="slider round">{light ? <CiLight className='day'/> : <CiDark className='night'/> }</span>
         </label>
     </div>
   );
