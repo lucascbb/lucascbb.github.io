@@ -15,6 +15,8 @@ function Home() {
             <h1 className="name1">HELLO EVERYBODY,</h1>
             <h1 className="name2">I`M LUCAS</h1>
             <h1 className="name3">BAROQUELLO</h1>
+            {/* <h1 className="name3">A DESIGNER</h1> */}
+            <h1 className="name4">A FRONT-END DEVELOPER.</h1>
           </div>
       </div>
     </div>
