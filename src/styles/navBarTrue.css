@@ -9,6 +9,7 @@
     font-size: 50px;
     top: 20px;
     left: 20px;
+    cursor: pointer;
 }
 
 .btnFalse {
@@ -20,6 +21,7 @@
     font-size: 50px;
     top: 20px;
     left: 20px;
+    cursor: pointer;
 }
 
 @keyframes example2Btn {
@@ -36,6 +38,7 @@
     font-size: 50px;
     top: 20px;
     left: 20px;
+    cursor: pointer;
 }
 
 @keyframes example2 {
@@ -60,6 +63,8 @@
     width: 200px;
     height: 120%;
     background-color: #556377;
+    box-shadow: 5px 5px 15px #29303a;
+    z-index: 1;
 }
 
 @keyframes navDesactive {
@@ -77,6 +82,7 @@
     height: 120%;
     background-color: #556377;
     box-shadow: 5px 5px 15px #29303a;
+    z-index: 1;
 }
 
 @keyframes navActive {
@@ -90,7 +96,7 @@
     flex-direction: column;
     width: 50%;
     height: 960px;
-    background-color: #3B4553;
+    background-color: #3b4553c5;
   }
   
   .name1 {
@@ -98,6 +104,20 @@
     font-size: 3.2vw;
     color: rgb(255, 255, 255);
   }
+
+  .divBarName {
+    animation-name: name1Ani;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    left: 8%;
+    position: absolute;
+  }
+
+  @keyframes name1Ani {
+    0%   { top: 0px; left: 180px;}
+    80%   { top: 300px; left: 180px;}
+    100%   { top: 280px; left: 180px;}
+}
   
   .name2 {
     text-align: center;
@@ -112,28 +132,41 @@
   }
 
   .links {
-    margin: 35px 0 0 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    height: 380px;
   }
 
   .liLink {
-    margin-top: 30px;
+    margin: 30px 0;
     padding: 10px;
   }
 
-  .liLink:hover {
+  /* .liLink:hover {
     background-color: rgb(197, 197, 197);
-  }
+    box-shadow: 2px 2px 10px rgb(23, 22, 46);
+  } */
 
   .linkNav {
     text-decoration: none;
+    display: flex;
+    align-items: center;
     color: rgb(255, 255, 255);
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+    width: 220px;
+    height: 50px;
+    margin: 20px 0;
   }
   
   .linkNav:hover {
     text-decoration: none;
-    color: rgb(76, 76, 76);
+    background-color: #6e809a;
+    color: rgb(52, 52, 52);
+    box-shadow: 2px 2px 10px rgba(23, 22, 46, 0.716);
   }
  
   .iconLink1 {

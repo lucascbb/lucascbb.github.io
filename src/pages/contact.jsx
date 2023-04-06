@@ -29,16 +29,16 @@ function Home() {
                 <button onClick={ handleClick } className='btnCopyEmail'><MdCopyAll className='iconCopyEmail'/></button>
                 <p id='copyEmail'></p>
             </div>
+            <a className='linkContact' href='https://www.linkedin.com/in/lucas-baroquello/'>
+                <h1 className='iconContact'><SiLinkedin className='iconCo'/>Linkedin</h1>
+                <FiExternalLink className='iconLink'/>
+            </a>
             <a  className='linkContact' href='https://api.whatsapp.com/send?phone=5511941139277&text=Ol%C3%A1,%20tudo%20bem?%20Encontrei%20seu%20contato%20atrav%C3%A9s%20do%20Github.%20Eu%20sou%20o/a%20(insira%20seu%20nome%20aqui'>
                 <h1 className='iconContact'><SiWhatsapp className='iconCo'/>Whatsapp</h1>
                 <FiExternalLink className='iconLink'/>
             </a>
             <a className='linkContact' href='https://github.com/lucascbb'>
                 <h1 className='iconContact'><SiGithub className='iconCo'/>Github</h1>
-                <FiExternalLink className='iconLink'/>
-            </a>
-            <a className='linkContact' href='https://www.linkedin.com/in/lucas-baroquello/'>
-                <h1 className='iconContact'><SiLinkedin className='iconCo'/>Linkedin</h1>
                 <FiExternalLink className='iconLink'/>
             </a>
         </div>
