@@ -1,3 +1,4 @@
+/* 
 .contactPai{
     display: flex;
     justify-content: center;
@@ -89,4 +90,133 @@
     padding: 4px;
     border-radius: 2px;
     z-index: 2;
+} */
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .contactPai{
+        margin-top: 120px;
+        padding: 10px;
+    }
+
+    #copyEmail {
+        position: absolute;
+        padding: 5px 10px;
+        border-radius: 8px;
+        animation-name: copyEmailAni;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count:unset;
+        animation-direction: alternate;
+    }
+
+    @keyframes copyEmailAni {
+        0% { top: -30px; }
+        100% { top: 80px;}
+    }
+
+    .contactLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailContact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 20px 0;
+    }
+    
+    .iconEmailCo {
+        width: 9vw;
+    }
+
+    .emailLucasFalse {
+        font-size: 1rem;
+        color: rgb(228, 228, 231);
+    }
+
+    .emailLucasTrue {
+        font-size: 1rem;
+        color: rgb(75, 85, 117);
+    }
+
+    .btnCopyEmail {
+        all: unset;
+        margin: 0 0 0 5px;
+    }
+
+    .iconCopyEmail {
+        font-size: 1.3rem;
+    }
+
+    .titleContact{
+        font-size: 2.5rem;
+        margin: 0 0 40px 0;
+        border-bottom: 1px solid black;
+        padding: 10px 20px;
+    }
+
+    .linkContactTrue {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(75, 85, 117);
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: black;
+        margin: 10px 0;
+        width: 80vw;
+        height: 12vw;
+        box-shadow: 0 2px 5px 2px #4a4a48a5;
+        background:linear-gradient(to bottom, rgb(103, 120, 178) 5%, rgb(75, 85, 117) 100%);
+        background-color: rgb(75, 85, 117);
+        border:1px solid rgb(75, 85, 117);
+        cursor:pointer;
+        font-weight:bold;
+        text-shadow:0px 1px 0px rgb(59, 66, 91);
+    }
+
+    .linkContactFalse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: black;
+        margin: 10px 0;
+        width: 80vw;
+        height: 12vw;
+        box-shadow: 0 2px 5px 2px #4a4a48a5;
+        background:linear-gradient(to bottom, rgb(215, 218, 228) 5%, rgb(162, 164, 173) 100%);
+        background-color: rgb(75, 85, 117);
+        border:1px solid rgb(75, 85, 117);
+        cursor:pointer;
+        font-weight:bold;
+        text-shadow:0px 1px 0px rgb(59, 66, 91);
+    }
+
+    .contactRight {
+        visibility: hidden;
+    }
+
+    .iconContact{
+        font-size: 1.5rem;
+    }
+
+    .iconCo{
+        font-size: 1.5rem;
+        margin: 0 10px 0 15px;
+    }
+
+    .iconLink {
+        font-size: 1.5rem;
+        margin: 0 10px 0 5px;
+    }
 }
+

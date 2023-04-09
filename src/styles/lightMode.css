@@ -1,8 +1,9 @@
+@media screen and (min-width: 320px) and (max-width: 375px) {
 .switch {
     position: absolute;
     display: inline-block;
-    right: 80px;
-    top: 20px;
+    right: 15px;
+    top: 15px;
     width: 60px;
     height: 34px;
   }
@@ -70,3 +71,4 @@
     right: 8px;
     font-size: 20px;
   }
+}

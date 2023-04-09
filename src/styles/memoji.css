@@ -5,13 +5,15 @@
 
 #olho1, #olho2 {
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 3vw;
+    width: 3vw;
     z-index: -2;
   };
   
   #imagem {
     position: absolute;
+    width: 28vw;
+    height: 35vw;
   }
   
   .paiMemoji {
@@ -22,10 +24,15 @@
   
   .fundoOlhos {
     background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 80px;
+    width: 200px;
+    height: 45px;
     position: absolute;
-    top: 355px;
-    right: 100px;
+    top: 215px;
+    right: 90px;
     z-index: -3;
+  }
+
+  #imagem {
+    width: 28vw;
+    height: 35vw;
   }

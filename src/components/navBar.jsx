@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/navBarTrue.css';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { MdOutlineClose, MdContactMail } from 'react-icons/md'
@@ -7,13 +7,14 @@ import { HiHome } from 'react-icons/hi'
 import { IoMdContact } from 'react-icons/io'
 import { BsFileEarmarkCode } from 'react-icons/bs'
 import ThemeContext from '../context/ThemeContext';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 function NavBar() {
 const [icon, setIcon] = useState(false)
 const [classBar, setClassBar] = useState('nav')
 const [classBtn, setClassBtn] = useState('btn')
 const { light } = useContext(ThemeContext)
+const location = useLocation();
 
 const handleClick = () => {
   setClassBar('navTrue')
@@ -23,6 +24,11 @@ const handleClick = () => {
   if (classBtn === 'btnTrue') {  setClassBtn('btnFalse') }
   if (icon) { setIcon(false) }
 }
+
+useEffect(() => {
+  setClassBtn('btnFalse');
+  setClassBar('navFalse');
+},[location.pathname])
 
   return (
     <div className='paiNavBar'>
