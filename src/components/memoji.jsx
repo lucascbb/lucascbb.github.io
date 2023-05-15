@@ -1,10 +1,14 @@
 import emoji from '../images/semtitulo.png'
+import emoji2 from '../images/memoji-2.png'
 import olho1 from '../images/olho.png'
 import olho2 from '../images/olho.png'
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
+import ThemeContext from '../context/ThemeContext';
 import '../styles/memoji.css'
 
 function Memoji() {
+  const { light, setLight } = useContext(ThemeContext);
+
   useEffect(() => {
     document.getElementById('olho1').style.left = '370px'
     document.getElementById('olho1').style.top = '370px'
@@ -34,7 +38,7 @@ function Memoji() {
 
   return (
     <div className='paiMemoji'>
-      <img src={ emoji } alt='' id='imagem' />
+      <img src={ light ? emoji2 : emoji } alt='' id='imagem' />
       <div>
         <img src={ olho1 } alt='' id='olho1' />
         <img src={ olho2 } alt='' id='olho2' />

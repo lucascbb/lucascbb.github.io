@@ -1,31 +1,39 @@
 #mainHome {
-    display: flex;
-    position: relative;
-   }
+  display: flex;
+  position: relative;
+}
 
-#olho1, #olho2 {
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    z-index: -2;
-  };
-  
-  #imagem {
-    position: absolute;
-  }
-  
-  .paiMemoji {
-    position: absolute;
-    right: 200px;
-    bottom: -5px;
-  }
-  
-  .fundoOlhos {
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 80px;
-    position: absolute;
-    top: 355px;
-    right: 100px;
-    z-index: -3;
-  }
+.paiMemoji {
+  animation-name: paimemojiAni;
+  animation-duration: 1s;
+  position: absolute;
+  right: 200px;
+  bottom: -5px;
+}
+
+@keyframes paimemojiAni {
+  0%   { right: 0px;}
+  100%   { right: 200px;}
+}
+
+#olho1,
+#olho2 {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  z-index: -2;
+};
+
+#imagem {
+  position: absolute;
+}
+
+.fundoOlhos {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 80px;
+  position: absolute;
+  top: 355px;
+  right: 100px;
+  z-index: -3;
+}
