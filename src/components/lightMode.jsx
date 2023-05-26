@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import '../styles/lightMode.css';
 import ThemeContext from '../context/ThemeContext';
 import { CiLight, CiDark } from 'react-icons/ci'
+import '../styles/lightMode.css';
 
 function LightMode() {
     const { light, setLight } = useContext(ThemeContext)

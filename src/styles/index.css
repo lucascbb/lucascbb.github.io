@@ -2,4 +2,14 @@
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
+  font-family: CircularFont;
+}
+
+@font-face {
+  font-family: CircularFont;
+  src: url(../fonts/CircularSpotify.ttf);
+}
+
+:root {
+  --primeira: brown;
 }

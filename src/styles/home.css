@@ -139,12 +139,12 @@
 
 .divBarName {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   animation-name: name1Ani;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  position: absolute;
 }
 
 @keyframes name1Ani {
@@ -159,31 +159,90 @@
   }
 }
 
-.name1 {
+.divBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: name1Ani;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  position: absolute;
+}
+
+.name1light {
+  -webkit-text-stroke: 3px rgb(255, 255, 255);
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 7px 3px rgb(0, 0, 0),
+  6px 6px 12px rgb(116, 116, 116);
+  font-size: 5vw;
+  color: rgb(255, 255, 255);
+}
+
+.name2light {
+  -webkit-text-stroke: 3px rgb(255, 255, 255);
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 7px 3px rgb(0, 0, 0),
+  6px 6px 12px rgb(116, 116, 116);
+  font-size: 5vw;
+  color: rgb(255, 255, 255);
+}
+
+.name3light {
+  -webkit-text-stroke: 3px black;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 8px 4px rgb(0, 0, 0);
+  font-size: 6.2vw;
+  color: #4d6486;
+}
+
+.name1dark {
+  -webkit-text-stroke: 3px black;
   letter-spacing: 2px;
   margin-bottom: 30px;
   text-align: center;
-  font-size: 3.2vw;
-  color: rgb(255, 255, 255);
+  text-shadow: 7px 3px white,
+  6px 6px 12px rgb(116, 116, 116);
+  font-size: 5vw;
+  color: rgb(0, 0, 0);
 }
 
-.name2 {
-  letter-spacing: 2px;
-  margin-bottom:20px;
+.name2dark {
+  -webkit-text-stroke: 3px black;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 6.2vw;
-  color: rgb(255, 255, 255);
+  text-shadow: 7px 3px white,
+  6px 6px 12px rgb(116, 116, 116);
+  font-size: 5vw;
+  color: rgb(0, 0, 0);
 }
 
-.name3 {
+.name3dark {
+  -webkit-text-stroke: 3px black;
   letter-spacing: 2px;
   text-align: center;
-  padding-bottom: 30px;
-  font-size: 4.6vw;
-  color: rgb(255, 255, 255);
+  text-shadow: 8px 4px rgb(0, 0, 0);
+  font-size: 6vw;
+  color: #4d6486;
 }
 
-.name4Designer {
+.fundo {
+  background-color: black;
+  border-radius: 30px;
+  width: 110%;
+  height: 100px;
+  position: relative;
+  bottom: 90px;
+  padding: 0 5px;
+  z-index: -1;
+}
+
+/* .name4Designer {
   font-size: 4rem;
   text-align: center;
   font-size: 90px;
@@ -191,12 +250,12 @@
   width: 600px;
   height: 70px;
   padding-bottom: 40px;
-  color: rgb(0, 0, 0);
+  color: #4d6486;
   background-color: #3b4553;
   text-overflow: hidden;
-}
+} */
 
-.name4Designer:before {
+/* .name4Designer:before {
   animation: mymove 8s steps(35) infinite;
   content: "";
   position: absolute;
@@ -207,7 +266,7 @@
   color: rgb(0, 0, 0);
   background-color: #3b4553;
   border-left: 4px solid white;
-}
+} */
 
 /* .name4Front {
   font-size: 4rem;
@@ -280,7 +339,7 @@
   100% { width: 99%; }
 } */
 
-.links {
+/* .links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -299,7 +358,6 @@
   align-items: center;
   color: rgb(255, 255, 255);
   font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 10px 0;
   width: 220px;
   height: 50px;
@@ -335,7 +393,7 @@
   color: white;
   font-size: 20px;
   margin: 0 10px 0;
-}
+} */
 
 /* .darkModeTrue {
   background: rgb(59, 69, 83);
@@ -345,9 +403,9 @@
   position: absolute;
   right: 0;
   z-index: -3;
-} */
+}
 
-/* .darkModeFalse {
+.darkModeFalse {
   background: rgb(255, 255, 255);
   background: linear-gradient(25deg, rgba(255, 255, 255, 1) 0%, rgba(118, 127, 140, 1) 100%);
   width: 100%;
