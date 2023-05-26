@@ -1,15 +1,15 @@
 import Memoji from '../components/memoji';
-import NavBar from '../components/navBar';
-import React, { useState, useEffect } from 'react';
-import LightMode from '../components/lightMode';
-import ThemeContext from '../context/ThemeContext';
-import { useContext } from 'react';
+// import NavBar from '../components/navBar';
+import React, { useState } from 'react';
+// import LightMode from '../components/lightMode';
+// import ThemeContext from '../context/ThemeContext';
+// import { useContext } from 'react';
 import '../styles/home.css';
 import imgHome0 from '../images/homePage.jpg'
 import imgHome1 from '../images/homePage2.png'
 
 function Home() {
-  const { light } = useContext(ThemeContext);
+  // const { light } = useContext(ThemeContext);
   const [nameProfile, setNameProfile] = useState("DESIGNER")
 
   const minhafuncao = () => {
@@ -22,11 +22,7 @@ function Home() {
     }
   }
 
-  setInterval(minhafuncao, 8000);
-
-  const handleClick = () => {
-    console.log('oi');
-  };
+  setInterval(minhafuncao, 8000)
 
   return (
     <div className="paidivBar">
