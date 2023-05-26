@@ -1,0 +1,37 @@
+.avoCard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1800px;
+    margin: auto;
+}
+
+.paiCard {
+    border-radius: 10px;
+    background-color: rgb(37, 65, 138);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid rgb(236, 236, 236);
+    margin: 10px;
+    height: 290px;
+    width: 600px;
+    box-shadow: 2px 2px 4px rgb(13, 10, 29);
+}
+
+.titleCard {
+    text-align: center;
+    margin: 10px;
+}
+
+.subtitleCard {
+    text-align: center;
+    margin: 10px;
+}
+
+.stacksCard {
+    text-align: center;
+    margin: 10px;
+}

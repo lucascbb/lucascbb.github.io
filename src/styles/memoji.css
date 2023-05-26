@@ -7,8 +7,9 @@
   animation-name: paimemojiAni;
   animation-duration: 1s;
   position: absolute;
-  right: 200px;
-  bottom: -5px;
+  right: 170px;
+  bottom: 80px;
+  z-index: -2;
 }
 
 @keyframes paimemojiAni {
