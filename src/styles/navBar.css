@@ -1,0 +1,44 @@
+@font-face {
+    font-family: adelia;
+    src: url(../fonts/NalikaSignature.ttf);
+}
+
+.pai {
+    align-items: center;
+    position: absolute;
+    display: flex;
+    left: 35px;
+    top: 45px;
+    width: 60px;
+    height: 34px;
+    z-index: 1;
+}
+
+.lucasBaroquello {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.lucas {
+    font-family: adelia;
+    font-size: 50px;
+    -webkit-text-stroke: 1px rgb(5, 5, 5);
+    transform: rotate(-20deg);
+    margin-right: 20px;
+    margin-bottom: -10px;
+}
+
+.baroquello {
+    font-family: adelia;
+    font-size: 50px;
+    -webkit-text-stroke: 1px rgb(5, 5, 5);
+    transform: rotate(-20deg);
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}

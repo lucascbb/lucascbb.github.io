@@ -1,10 +1,11 @@
 .switch {
     position: absolute;
     display: inline-block;
-    right: 15px;
-    top: 15px;
+    right: 55px;
+    top: 35px;
     width: 60px;
     height: 34px;
+    z-index: 1;
   }
   
   .switch input {
@@ -59,7 +60,7 @@
     z-index: 2;
     top: 7px;
     left: 8px;
-    color: white;
+    color: rgb(228, 231, 41);
     font-size: 20px;
   }
 
