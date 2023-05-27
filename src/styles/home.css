@@ -1,4 +1,4 @@
-.paiNavBar {
+/* .paiNavBar {
   margin-top: -20px;
   padding: 0;
 }
@@ -10,9 +10,9 @@
   top: 20px;
   left: 20px;
   cursor: pointer;
-}
+} */
 
-.btnFalse {
+/* .btnFalse {
   all: unset;
   animation-name: example2Btn;
   animation-fill-mode: forwards;
@@ -32,9 +32,9 @@
   100% {
     left: 20px;
   }
-}
+} */
 
-.btnTrue {
+/* .btnTrue {
   all: unset;
   animation-name: example2;
   animation-fill-mode: forwards;
@@ -54,9 +54,9 @@
   100% {
     left: 240px;
   }
-}
+} */
 
-.nav {
+/* .nav {
   position: absolute;
   left: -220px;
   width: 200px;
@@ -108,7 +108,7 @@
   100% {
     left: 0px;
   }
-}
+} */
 
 .imgdivBar {
   width: 100%;
@@ -133,7 +133,7 @@
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 35px;
   background-color: #000000;
 }
 
@@ -163,9 +163,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation-name: name1Ani;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
+  left: 180px;
+  top: 200px;
   position: absolute;
 }
 

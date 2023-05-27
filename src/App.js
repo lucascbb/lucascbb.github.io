@@ -5,7 +5,7 @@ import LightMode from '../src/components/lightMode';
 import NavBar from '../src/components/navBar';
 
 function App() {
-  const [light, setLight] = useState(false);
+  const [light, setLight] = useState(true);
   return (
     <ThemeContext.Provider value={{ light, setLight }}>
       <NavBar />

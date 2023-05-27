@@ -5,6 +5,10 @@
   font-family: CircularFont;
 }
 
+ul, ol {
+  list-style-type: none;
+}
+
 @font-face {
   font-family: CircularFont;
   src: url(../fonts/CircularSpotify.ttf);

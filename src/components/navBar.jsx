@@ -1,43 +1,38 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { MdOutlineClose, MdContactMail } from 'react-icons/md'
-import { HiHome } from 'react-icons/hi'
-import { IoMdContact } from 'react-icons/io'
-import { BsFileEarmarkCode } from 'react-icons/bs'
+import { Link, useLocation } from 'react-router-dom';
 import ThemeContext from '../context/ThemeContext';
 import { useContext, useEffect } from 'react';
 import "../styles/navBar.css"
 
 function NavBar() {
+    const { light } = useContext(ThemeContext);
+    const location = useLocation();
+
     return (
-        <nav className='pai'>
-            <div className='lucasBaroquello'>
+        <nav className='navbarpai-nav'>
+            <div className='namepai-nav'>
                 <p className='lucas'>Lucas</p>
                 <p className='baroquello'>Baroquello</p>
             </div>
-            <ul className='links'>
-                <Link to="/" className='linkNav'>
-                    <li className='liLink'>
-                        {/* <HiHome className='iconLink1'/> */}
+            <ul className='linkspai-nav'>
+                <Link to="/" className='link-nav'>
+                    <li className={location.pathname === "/" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
+                    {/* <li className={location.pathname === "/" ? 'liLink-nav-selected' : 'liLink-nav'}> */}
                         Home
                     </li>
                 </Link>
-                <Link to="/sobre" className='linkNav'>
-                    <li className='liLink'>
-                        {/* <IoMdContact className='iconLink2'/> */}
+                <Link to="/sobre" className='link-nav'>
+                <li className={location.pathname === "/sobre" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
                         Sobre Mim
                     </li>
                 </Link>
-                <Link to="/contato" className='linkNav'>
-                    <li className='liLink'>
-                        {/* <MdContactMail className='iconLink3'/> */}
+                <Link to="/contato" className='link-nav'>
+                <li className={location.pathname === "/contato" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
                         Contato
                     </li>
                 </Link>
-                <Link to="/projetos" className='linkNav'>
-                    <li className='liLink'>
-                        {/* <BsFileEarmarkCode className='iconLink4'/> */}
+                <Link to="/projetos" className='link-nav'>
+                <li className={location.pathname === "/projetos" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
                         Projetos
                     </li>
                 </Link>

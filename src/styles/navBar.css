@@ -1,27 +1,28 @@
 @font-face {
-    font-family: adelia;
+    font-family: nalika;
     src: url(../fonts/NalikaSignature.ttf);
 }
 
-.pai {
+.navbarpai-nav {
     align-items: center;
     position: absolute;
+    justify-content: space-between;
     display: flex;
-    left: 35px;
-    top: 45px;
-    width: 60px;
+    left: 45px;
+    top: 60px;
+    width: 45%;
     height: 34px;
     z-index: 1;
 }
 
-.lucasBaroquello {
+.namepai-nav {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .lucas {
-    font-family: adelia;
+    font-family: nalika;
     font-size: 50px;
     -webkit-text-stroke: 1px rgb(5, 5, 5);
     transform: rotate(-20deg);
@@ -30,15 +31,64 @@
 }
 
 .baroquello {
-    font-family: adelia;
+    font-family: nalika;
     font-size: 50px;
     -webkit-text-stroke: 1px rgb(5, 5, 5);
     transform: rotate(-20deg);
 }
 
-.links {
+.linkspai-nav {
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    padding: 0 10px;
+}
+
+.link-nav {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+}
+
+.liLink-nav {
+    font-size: 32px;
+    border-radius: 30px;
+    padding: 5px 18px;
+    color: white;
+}
+
+.liLinklight-nav {
+    font-size: 32px;
+    border-radius: 30px;
+    padding: 5px 18px;
+    color: rgb(0, 0, 0);
+}
+
+.liLinkdark-nav {
+    font-size: 32px;
+    border-radius: 30px;
+    padding: 5px 18px;
+    color: rgb(0, 0, 0);
+}
+
+.liLink-nav-selected {
+    font-size: 32px;
+    border-radius: 30px;
+    padding: 5px 18px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.liLinkdark-nav:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.03);
+    box-shadow: 4px 4px 8px rgba(26, 26, 26, 0.61);
+}
+
+.liLinklight-nav:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.03);
+    box-shadow: 4px 4px 8px rgba(26, 26, 26, 0.61);
 }

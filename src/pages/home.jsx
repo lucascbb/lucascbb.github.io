@@ -6,7 +6,6 @@ import imgHome1light from '../images/homePage-light1.jpg'
 import imgHome2light from '../images/homePage-light2.png'
 import imgHome1dark from '../images/homePage-dark1.png'
 import imgHome2dark from '../images/homePage-dark2.png'
-import NavBar from '../components/navBar';
 
 function Home() {
   const { light } = useContext(ThemeContext);
