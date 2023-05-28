@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ThemeContext from '../context/ThemeContext';
-import { useContext, useEffect } from 'react';
 import "../styles/navBar.css"
 
 function NavBar() {
@@ -21,6 +20,11 @@ function NavBar() {
                         Home
                     </li>
                 </Link>
+                <Link to="/projetos" className='link-nav'>
+                <li className={location.pathname === "/projetos" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
+                        Projetos
+                    </li>
+                </Link>
                 <Link to="/sobre" className='link-nav'>
                 <li className={location.pathname === "/sobre" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
                         Sobre Mim
@@ -29,11 +33,6 @@ function NavBar() {
                 <Link to="/contato" className='link-nav'>
                 <li className={location.pathname === "/contato" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
                         Contato
-                    </li>
-                </Link>
-                <Link to="/projetos" className='link-nav'>
-                <li className={location.pathname === "/projetos" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
-                        Projetos
                     </li>
                 </Link>
             </ul>
