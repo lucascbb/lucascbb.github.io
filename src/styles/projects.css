@@ -3,35 +3,177 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 1800px;
-    margin: auto;
+    margin-top: 140px;
 }
 
 .paiCard {
-    border-radius: 10px;
+    border-radius: 45px;
+    background-color: rgb(7, 174, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 730px;
+    width: 120px;
+    margin-right: -50px;
+    box-shadow: -1px 0 20px 5px rgba(13, 10, 29, 0.356);
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 2s ease;
+}
+
+.paiCard:hover {
+    box-shadow: -1px 0 20px 5px rgba(0, 0, 0, 0.651);
+    margin-top: -40px;
+}
+
+.titleCard {
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    left: -30px;
+    top: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
+}
+
+.subtitleCard {
+    display: none;
+}
+
+.stacksCard {
+    display: none;
+}
+
+.imgCard {
+    display: none;
+}
+
+.paiBtnsCard {
+    display: none;
+}
+
+.paiCirclesCard {
+    display: none;
+}
+
+
+/* SELECTED  */
+
+.paiCard-selected {
+    border-radius: 45px;
+    width: 800px;
     background-color: rgb(37, 65, 138);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 10px solid rgb(236, 236, 236);
-    margin: 10px;
-    height: 290px;
-    width: 600px;
-    box-shadow: 2px 2px 4px rgb(13, 10, 29);
+    height: 730px;
+    margin-right: -50px;
+    box-shadow: -1px 0px 20px 5px rgba(13, 10, 29, 0.356);
+    transition: width 2s ease;
 }
 
-.titleCard {
+.titleCard-selected {
     text-align: center;
-    margin: 10px;
+    position: relative;
+    top: 5px;
+    font-size: 55px;
+    animation: TselectedCard forwards  2.5s;
 }
 
-.subtitleCard {
-    text-align: center;
-    margin: 10px;
+@keyframes TselectedCard {
+    0% {
+    transform: scale(0.2);
+    transform: translateX(100);
+    width: 700px;
+    }
+
+    100% {
+    transform: scale(1);
+    transform: translateX(100);
+    width: 700px;
+    }
 }
 
-.stacksCard {
+.subtitleCard-selected {
     text-align: center;
+    animation: TselectedCard forwards  2.5s;
+}
+
+.stacksCard-selected {
+    position: relative;
+    top: 540px;
+    animation: selectedCard forwards  2.5s;
+}
+
+.paiBtnsCard-selected {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 320px;
+}
+
+.leftBtnCard {
+    all: unset;
+    font-size: 45px;
+    margin: 0 20px;
+    opacity: 0.4;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    animation: selectedCard forwards  2.5s;
+}
+
+.rightBtnCard {
+    all: unset;
+    font-size: 45px;
+    margin: 0 70px 0;
+    opacity: 0.4;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    animation: selectedCard forwards  2.5s;
+}
+
+.leftBtnCard:hover, .rightBtnCard:hover {
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.imgCard-selected {
     margin: 10px;
+    height: 500px;
+    width: 500px;
+    animation: selectedCard1 forwards  2.5s;
+}
+
+@keyframes selectedCard {
+    0% {
+    transform: scale(0);
+    }
+
+    100% {
+    transform: scale(1);
+    }
+}
+
+@keyframes selectedCard1 {
+    0% {
+    transform: scale(0);
+    }
+
+    100% {
+    transform: scale(1);
+    }
+}
+
+.paiCirclesCard-selected {
+    opacity: 0.7;
+    color: rgb(63, 63, 63);
+    animation: selectedCard forwards  2.5s;
 }
