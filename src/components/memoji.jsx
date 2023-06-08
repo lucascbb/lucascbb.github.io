@@ -1,8 +1,5 @@
-import emojiLigth1 from '../images/semtitulo.png'
-import emojiDark0 from '../images/memoji-2.png'
-import emojiDark1 from '../images/memoji-2-light1.png'
-import emojiDark2 from '../images/memoji-2-light2.png'
-import emojiLigth2 from '../images/memoji-light2.png'
+import emojiLigth from '../images/memoji-light.png'
+import emojiDark from '../images/memoji-dark.png'
 import olho1 from '../images/olho.png'
 import olho2 from '../images/olho.png'
 import React, { useEffect, useContext, useState } from 'react';
@@ -11,7 +8,6 @@ import '../styles/memoji.css'
 
 function Memoji() {
   const { light, setLight } = useContext(ThemeContext);
-  const [ emojiDark, setEmojiDark ] = useState(emojiDark1);
 
   useEffect(() => {
     document.getElementById('olho1').style.left = '370px'
@@ -40,16 +36,9 @@ function Memoji() {
     document.getElementById('olho2').style.top = y2 + 'px'
   })
 
-    // setTimeout(() => {
-    //   if (emojiDark === emojiDark1) {
-    //     setEmojiDark(emojiDark2)
-    //   } else { setEmojiDark(emojiDark1) }
-    //   console.log((Math.floor(Math.random() * (7 - 3)) + 3) * 1000);
-    // }, (Math.floor(Math.random() * (7 - 3)) + 3) * 1000)
-
   return (
     <div className='paiMemoji'>
-      <img src={ light ? emojiDark0 : emojiLigth1 } alt='' id='imagem' />
+      <img src={ light ? emojiDark : emojiLigth } alt='' id='imagem' />
       <div>
         <img src={ olho1 } alt='' id='olho1' />
         <img src={ olho2 } alt='' id='olho2' />
