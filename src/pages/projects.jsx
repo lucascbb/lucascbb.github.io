@@ -7,10 +7,8 @@ import image2 from '../images/trybetunes-Mockup2.png'
 import image1 from '../images/trybetunes-Mockup.png'
 import recipes1 from '../images/recipes-Mockup.png'
 import recipes2 from '../images/recipes-Mockup2.png'
-import gif1 from '../images/laptop-mockup.png'
-import gif2 from '../images/iphone-mockup.png'
-import gif3 from '../images/Trybetunes.png'
-import gi14 from '../images/laptop-mockup2.png'
+import recipes3 from '../images/recipes-Mockup3.png'
+import tfc1 from '../images/tfc-Mockup.png'
 import html from '../images/html.png'
 import css from '../images/css.png'
 import javascript from '../images/javascript.png'
@@ -37,10 +35,6 @@ function Projects() {
         { img: javascript, name: "JavaScript" },
         { img: html, name: "React" },
       ],
-      // backgroundImage: `${image7}`,
-      // img1: gif1,
-      // img2: gif2,
-      // img3: gif3,
     },
     {
       title: "Trivia",
@@ -51,10 +45,6 @@ function Projects() {
         { img: javascript, name: "JavaScript" },
         { img: html, name: "React" },
       ],
-      // backgroundImage: `${image7}`,
-      // img1: gif1,
-      // img2: gif2,
-      // img3: gif3,
     },
     {
       title: "Trybe Futebol",
@@ -65,10 +55,6 @@ function Projects() {
         { img: javascript, name: "JavaScript" },
         { img: html, name: "React" },
       ],
-      // backgroundImage: `${image7}`,
-      // img1: gif1,
-      // img2: gif2,
-      // img3: gif3,
     },
     {
       title: "Receitas",
@@ -79,10 +65,6 @@ function Projects() {
         { img: javascript, name: "JavaScript" },
         { img: html, name: "React" },
       ],
-      // backgroundImage: `${image7}`,
-      // img1: gif1,
-      // img2: gif2,
-      // img3: gif3,
     },
     {
       title: "Trybetunes",
@@ -93,52 +75,50 @@ function Projects() {
         { img: javascript, name: "JavaScript" },
         { img: html, name: "React" },
       ],
-      // backgroundImage: `${image7}`,
-      // img1: gif1,
-      // img2: gif2,
-      // img3: gif3,
     },
     {
-      title: "Trivia",
+      title: "Brasileirão ",
       subtitle: "Um aplicativo de receitas de bebidas e comidas",
       stacks: [
         { img: html, name: "HTML" },
         { img: css, name: "CSS" },
-        { img: javascript, name: "JavaScript" },
+        { img: javascript, name: "Typescript" },
         { img: html, name: "React" },
       ],
-      // backgroundImage: `${image7}`,
-      // img1: gif1,
-      // img2: gif2,
-      // img3: gif3,
+      linkProject: "https://lucascbb.github.io/recipes/",
+      linkCode: "https://github.com/lucascbb/recipes",
+      color: "#933b23",
+      backgroundImage: `${tfc1}`,
+      backgroundImage2: `${recipes2}`,
+      backgroundImage3: `${recipes3}`,
     },
     {
       title: "Recipes App",
-      subtitle: "Um aplicativo de receitas de bebidas e comidas",
+      subtitle: "Um aplicativo de receitas de bebidas e comidas. Nesse projeto, é possível procurar uma receita específica, favoritar e fazer as receitas.",
       stacks: [
         { img: html, name: "HTML" },
         { img: css, name: "CSS" },
         { img: javascript, name: "JavaScript" },
         { img: react, name: "React" },
       ],
-      linkProject: "https://github.com/lucascbb/trybetunes",
-      linkCode: "https://lucascbb.github.io/trybetunes/",
+      linkProject: "https://lucascbb.github.io/recipes/",
+      linkCode: "https://github.com/lucascbb/recipes",
       color: "#933b23",
       backgroundImage: `${recipes1}`,
       backgroundImage2: `${recipes2}`,
-      backgroundImage3: `${image3}`,
+      backgroundImage3: `${recipes3}`,
     },
     {
       title: "Trybetunes",
-      subtitle: "Um aplicativo de receitas de bebidas e comidas",
+      subtitle: "Uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada.",
       stacks: [
         { img: html, name: "HTML" },
         { img: css, name: "CSS" },
         { img: javascript, name: "JavaScript" },
         { img: react, name: "React" },
       ],
-      linkProject: "https://github.com/lucascbb/trybetunes",
-      linkCode: "https://lucascbb.github.io/trybetunes/",
+      linkProject: "https://lucascbb.github.io/trybetunes/",
+      linkCode: "https://github.com/lucascbb/trybetunes",
       color: "rgb(184, 118, 19)",
       backgroundImage: `${image1}`,
       backgroundImage2: `${image2}`,
@@ -238,13 +218,13 @@ function Projects() {
                 <img src={ele.img3} alt="Imagem 3" className='imgCard' id={`imgCard-${i}`} />
               )} */}
               <div className='linkProjectPai' id={`linkProjectPai-${i}`}>
-                <a href={ele.linkCode} target="_blank" rel="noreferrer" className='btnLink' style={{ backgroundColor: ele.color }}>
+                <a href={ele.linkProject} target="_blank" rel="noreferrer" className='btnLink' style={{ backgroundColor: ele.color }}>
                   <div className='linkProject'>
                     <p>Ver Projeto</p>
                     <GoLinkExternal />
                   </div>
                 </a>
-                <a href={ele.linkProject} target="_blank" rel="noreferrer" className='btnLink' style={{ backgroundColor: ele.color }}>
+                <a href={ele.linkCode} target="_blank" rel="noreferrer" className='btnLink' style={{ backgroundColor: ele.color }}>
                   <div className='linkProject'>
                     <p>Ver Código</p>
                     <GoLinkExternal />
