@@ -8,10 +8,8 @@
 
 .paiCard {
     border-radius: 45px;
-    background-color: #4d6486;
-    background-image: ;
+    background-color: #0e0e0e;
     display: flex;
-    color: rgb(247, 247, 247);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -21,7 +19,7 @@
     box-shadow: -1px 0 20px 5px rgba(13, 10, 29, 0.356);
     cursor: pointer;
     overflow: hidden;
-    transition: width 2s ease;
+    transition: width 1.5s ease;
 }
 
 .paiCard:hover {
@@ -31,13 +29,16 @@
 
 .titleCard {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     position: relative;
     left: -30px;
     top: 0;
     writing-mode: vertical-rl;
     text-orientation: upright;
     white-space: nowrap;
+    text-shadow: 2px 4px black;
+    transform: scale(1.2);
+    color: rgb(253, 253, 253);
 }
 
 .subtitleCard {
@@ -68,13 +69,13 @@
     display: none;
 }
 
-
 /* SELECTED  */
 
 .paiCard-selected {
+    background-size: 100%;
     border-radius: 45px;
     width: 800px;
-    background-color: rgb(229, 230, 233);
+    background-color: #0e0e0e;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,16 +83,17 @@
     height: 730px;
     margin-right: -50px;
     box-shadow: -1px 0px 20px 5px rgba(13, 10, 29, 0.356);
-    transition: width 2s ease;
+    transition: width 1s ease;
 }
 
 .titleCard-selected {
     text-align: center;
     position: relative;
-    top: 20px;
+    bottom: 180px;
     font-size: 85px;
-    animation: TselectedCard forwards 2.5s;
-    color: white;
+    animation: TselectedCard forwards 2s;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 8px rgb(146, 146, 146);
 }
 
 @keyframes TselectedCard {
@@ -111,16 +113,16 @@
 .subtitleCard-selected {
     text-align: center;
     position: relative;
-    top: 360px;
-    animation: TselectedCard forwards 2.5s;
+    top: 130px;
+    animation: TselectedCard forwards 2s;
     color: white;
 }
 
 .stacksCard-selected {
     display: flex;
     position: relative;
-    top: 320px;
-    animation: selectedCard forwards 2.5s;
+    top: 110px;
+    animation: selectedCard forwards 2s;
 }
 
 .stacksCardteste {
@@ -141,7 +143,7 @@
     position: relative;
     justify-content: space-between;
     width: 100%;
-    bottom: 320px;
+    top: 70px;
 }
 
 .leftBtnCard {
@@ -152,7 +154,8 @@
     height: 45px;
     width: 45px;
     cursor: pointer;
-    animation: selectedCard forwards 2.5s;
+    color: rgb(85, 85, 85);
+    animation: selectedCard forwards 2s;
 }
 
 .rightBtnCard {
@@ -163,7 +166,8 @@
     height: 45px;
     width: 45px;
     cursor: pointer;
-    animation: selectedCard forwards 2.5s;
+    color: rgb(85, 85, 85);
+    animation: selectedCard forwards 2s;
 }
 
 .leftBtnCard:hover,
@@ -178,7 +182,8 @@
     margin: 10px;
     height: 500px;
     width: 500px;
-    animation: selectedCard1 forwards 2.5s;
+    bottom: 130px;
+    animation: selectedCard1 forwards 2s;
 }
 
 @keyframes selectedCard {
@@ -202,11 +207,11 @@
 }
 
 .paiCirclesCard-selected {
-    opacity: 0.7;
-    color: rgb(63, 63, 63);
-    animation: selectedCard forwards 2.5s;
+    opacity: 0.9;
+    color: rgb(85, 85, 85);
+    animation: selectedCard forwards 2s;
     position: relative;
-    bottom: 10px;
+    top: 168px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -219,15 +224,14 @@
     flex-direction: row;
     justify-content: center;
     position: relative;
-    bottom: 25px;
-    animation: selectedCard forwards 2.5s;
+    top: 150px;
+    animation: selectedCard forwards 2s;
 }
 
 .btnLink {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(209, 134, 22);
     color: white;
     font-size: 23px;
     text-decoration: none;
