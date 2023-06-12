@@ -5,14 +5,21 @@ import '../styles/projects.css'
 import image3 from '../images/trybetunes-Mockup3.png'
 import image2 from '../images/trybetunes-Mockup2.png'
 import image1 from '../images/trybetunes-Mockup.png'
+import image0 from '../images/trybetunes-Mockup0.png'
+import recipes0 from '../images/recipes-Mockup0.png'
 import recipes1 from '../images/recipes-Mockup.png'
 import recipes2 from '../images/recipes-Mockup2.png'
 import recipes3 from '../images/recipes-Mockup3.png'
+import tfc0 from '../images/tfc-Mockup0.png'
 import tfc1 from '../images/tfc-Mockup.png'
 import html from '../images/html.png'
 import css from '../images/css.png'
 import javascript from '../images/javascript.png'
 import react from '../images/react.png'
+import docker from '../images/docker.png'
+import mysql from '../images/mysql.png'
+import express from '../images/express.png'
+import sequelize from '../images/sequelize.png'
 import { IoIosArrowDroprightCircle } from "react-icons/io"
 import { IoIosArrowDropleftCircle } from "react-icons/io"
 import { TbCircle } from "react-icons/tb"
@@ -27,7 +34,7 @@ function Projects() {
   const [active, setActive] = useState(7);
   const [cards, setCards] = useState([
     {
-      title: "Trybetunes",
+      title: "Shopping Cart",
       subtitle: "Um aplicativo de receitas de bebidas e comidas",
       stacks: [
         { img: html, name: "HTML" },
@@ -37,7 +44,7 @@ function Projects() {
       ],
     },
     {
-      title: "Trivia",
+      title: "Solar System",
       subtitle: "Um aplicativo de receitas de bebidas e comidas",
       stacks: [
         { img: html, name: "HTML" },
@@ -47,7 +54,7 @@ function Projects() {
       ],
     },
     {
-      title: "Trybe Futebol",
+      title: "Star Wars",
       subtitle: "Um aplicativo de receitas de bebidas e comidas",
       stacks: [
         { img: html, name: "HTML" },
@@ -57,7 +64,7 @@ function Projects() {
       ],
     },
     {
-      title: "Receitas",
+      title: "Pixel art",
       subtitle: "Um aplicativo de receitas de bebidas e comidas",
       stacks: [
         { img: html, name: "HTML" },
@@ -67,7 +74,7 @@ function Projects() {
       ],
     },
     {
-      title: "Trybetunes",
+      title: "TrybeWallet",
       subtitle: "Um aplicativo de receitas de bebidas e comidas",
       stacks: [
         { img: html, name: "HTML" },
@@ -78,16 +85,17 @@ function Projects() {
     },
     {
       title: "Brasileirão ",
-      subtitle: "Um aplicativo de receitas de bebidas e comidas",
+      subtitle: "Um projeto fullstack de um site informativo sobre partidas e classificações de futebol!",
       stacks: [
-        { img: html, name: "HTML" },
-        { img: css, name: "CSS" },
-        { img: javascript, name: "Typescript" },
-        { img: html, name: "React" },
+        { img: docker, name: "Docker" },
+        { img: mysql, name: "MySQL" },
+        { img: express, name: "Express.js" },
+        { img: sequelize, name: "Sequelize" },
       ],
       linkProject: "https://lucascbb.github.io/recipes/",
-      linkCode: "https://github.com/lucascbb/recipes",
-      color: "#933b23",
+      linkCode: "https://github.com/lucascbb/trybe-futebol-clube",
+      color: "#464b32",
+      backgroundImage0: `${tfc0}`,
       backgroundImage: `${tfc1}`,
       backgroundImage2: `${recipes2}`,
       backgroundImage3: `${recipes3}`,
@@ -104,6 +112,7 @@ function Projects() {
       linkProject: "https://lucascbb.github.io/recipes/",
       linkCode: "https://github.com/lucascbb/recipes",
       color: "#933b23",
+      backgroundImage0: `${recipes0}`,
       backgroundImage: `${recipes1}`,
       backgroundImage2: `${recipes2}`,
       backgroundImage3: `${recipes3}`,
@@ -120,7 +129,7 @@ function Projects() {
       linkProject: "https://lucascbb.github.io/trybetunes/",
       linkCode: "https://github.com/lucascbb/trybetunes",
       color: "rgb(184, 118, 19)",
-      backgroundImage0: `${image1}`,
+      backgroundImage0: `${image0}`,
       backgroundImage: `${image1}`,
       backgroundImage2: `${image2}`,
       backgroundImage3: `${image3}`,
@@ -190,9 +199,9 @@ function Projects() {
               onClick={(e) => changeCard(i, e.currentTarget.className)}
               id={`divCard-${i}`} key={i}
               style={{
-                backgroundImage: carousel === 1 && i === active ? `url(${ele.backgroundImage})` : carousel === 2 && i === active ? `url(${ele.backgroundImage2})` : carousel === 3 && i === active ? `url(${ele.backgroundImage3})` : `url(${ele.backgroundImage})`,
-                // backgroundPosition: 'center',
-                // backgroundRepeat: 'no-repeat',
+                backgroundImage: carousel === 1 && i === active ? `url(${ele.backgroundImage})` : carousel === 2 && i === active ? `url(${ele.backgroundImage2})` : carousel === 3 && i === active ? `url(${ele.backgroundImage3})` : `url(${ele.backgroundImage0})`,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
                 // filter: 'blur(2px)',
                 // filter: carousel === 1 && i === active ? `blur(0)` : carousel === 2 && i === active ? `blur(0)` : carousel === 3 && i === active ? `blur(0)` : 'blur(1px)',
               }}
