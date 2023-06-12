@@ -10,6 +10,10 @@ import recipes0 from '../images/recipes-Mockup0.png'
 import recipes1 from '../images/recipes-Mockup.png'
 import recipes2 from '../images/recipes-Mockup2.png'
 import recipes3 from '../images/recipes-Mockup3.png'
+import planets0 from '../images/system-Mockup0.png'
+import planets1 from '../images/system-Mockup.png'
+import planets2 from '../images/system-Mockup2.png'
+import planets3 from '../images/system-Mockup3.png'
 import tfc0 from '../images/tfc-Mockup0.png'
 import tfc1 from '../images/tfc-Mockup.png'
 import html from '../images/html.png'
@@ -74,14 +78,21 @@ function Projects() {
       ],
     },
     {
-      title: "TrybeWallet",
-      subtitle: "Um aplicativo de receitas de bebidas e comidas",
+      title: "Solar System",
+      subtitle: "Essa aplicação simula uma visualização do Sistema Solar, bem como informações sobre diversas missões espaciais que ocorreram ao longo da história.",
       stacks: [
+        { img: react, name: "React" },
+        { img: javascript, name: "JavaScript" },
         { img: html, name: "HTML" },
         { img: css, name: "CSS" },
-        { img: javascript, name: "JavaScript" },
-        { img: html, name: "React" },
       ],
+      linkProject: "https://lucascbb.github.io/solar-system/",
+      linkCode: "https://github.com/lucascbb/solar-system",
+      color: "#707273",
+      backgroundImage0: `${planets0}`,
+      backgroundImage: `${planets1}`,
+      backgroundImage2: `${planets2}`,
+      backgroundImage3: `${planets3}`,
     },
     {
       title: "Brasileirão ",
@@ -104,10 +115,10 @@ function Projects() {
       title: "Recipes App",
       subtitle: "Um aplicativo de receitas de bebidas e comidas. Nesse projeto, é possível procurar uma receita específica, favoritar e fazer as receitas.",
       stacks: [
+        { img: react, name: "React" },
+        { img: javascript, name: "JavaScript" },
         { img: html, name: "HTML" },
         { img: css, name: "CSS" },
-        { img: javascript, name: "JavaScript" },
-        { img: react, name: "React" },
       ],
       linkProject: "https://lucascbb.github.io/recipes/",
       linkCode: "https://github.com/lucascbb/recipes",
@@ -121,10 +132,10 @@ function Projects() {
       title: "Trybetunes",
       subtitle: "Uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada.",
       stacks: [
+        { img: react, name: "React" },
+        { img: javascript, name: "JavaScript" },
         { img: html, name: "HTML" },
         { img: css, name: "CSS" },
-        { img: javascript, name: "JavaScript" },
-        { img: react, name: "React" },
       ],
       linkProject: "https://lucascbb.github.io/trybetunes/",
       linkCode: "https://github.com/lucascbb/trybetunes",
