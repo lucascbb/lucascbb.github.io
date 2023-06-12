@@ -1,8 +1,42 @@
+.lightMode {
+  display: flex;
+  position: absolute;
+  right: 130px;
+  top: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.lightMode > a:nth-child(1):hover {
+  transform: scale(1.2);
+  color: rgb(9, 156, 9);
+}
+
+.lightMode > a:nth-child(2):hover {
+  transform: scale(1.2);
+  color: #003b57;
+}
+
+.lightMode > a:nth-child(3):hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.lightMode > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.iconContact {
+  font-size: 35px;
+  margin: 0 10px;
+}
+
 .switch {
     position: absolute;
-    display: inline-block;
-    right: 55px;
-    top: 35px;
+    /* display: inline-block; */
+    right: -65px;
+    top: 0px;
     width: 60px;
     height: 34px;
     z-index: 1;

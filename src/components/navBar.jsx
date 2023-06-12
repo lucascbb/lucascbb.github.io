@@ -16,7 +16,6 @@ function NavBar() {
             <ul className='linkspai-nav'>
                 <Link to="/" className='link-nav'>
                     <li className={location.pathname === "/" ? 'liLink-nav-selected' : (light ? 'liLinkdark-nav' : 'liLinklight-nav')}>
-                    {/* <li className={location.pathname === "/" ? 'liLink-nav-selected' : 'liLink-nav'}> */}
                         Home
                     </li>
                 </Link>

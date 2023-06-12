@@ -90,11 +90,11 @@
 .titleCard-selected {
     text-align: center;
     position: relative;
-    bottom: 180px;
+    bottom: 175px;
     font-size: 85px;
     animation: TselectedCard forwards 2s;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 4px 8px rgb(146, 146, 146);
+    text-shadow: 2px 4px 8px rgb(80, 80, 80);
 }
 
 @keyframes TselectedCard {
