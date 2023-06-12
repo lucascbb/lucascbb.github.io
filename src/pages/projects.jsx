@@ -120,6 +120,7 @@ function Projects() {
       linkProject: "https://lucascbb.github.io/trybetunes/",
       linkCode: "https://github.com/lucascbb/trybetunes",
       color: "rgb(184, 118, 19)",
+      backgroundImage0: `${image1}`,
       backgroundImage: `${image1}`,
       backgroundImage2: `${image2}`,
       backgroundImage3: `${image3}`,
@@ -190,8 +191,8 @@ function Projects() {
               id={`divCard-${i}`} key={i}
               style={{
                 backgroundImage: carousel === 1 && i === active ? `url(${ele.backgroundImage})` : carousel === 2 && i === active ? `url(${ele.backgroundImage2})` : carousel === 3 && i === active ? `url(${ele.backgroundImage3})` : `url(${ele.backgroundImage})`,
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
+                // backgroundPosition: 'center',
+                // backgroundRepeat: 'no-repeat',
                 // filter: 'blur(2px)',
                 // filter: carousel === 1 && i === active ? `blur(0)` : carousel === 2 && i === active ? `blur(0)` : carousel === 3 && i === active ? `blur(0)` : 'blur(1px)',
               }}
