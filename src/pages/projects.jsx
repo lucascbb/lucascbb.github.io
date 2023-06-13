@@ -16,6 +16,7 @@ import planets2 from '../images/system-Mockup2.png'
 import planets3 from '../images/system-Mockup3.png'
 import tfc0 from '../images/tfc-Mockup0.png'
 import tfc1 from '../images/tfc-Mockup.png'
+import tfc2 from '../images/tfc-Mockup2.png'
 import html from '../images/html.png'
 import css from '../images/css.png'
 import javascript from '../images/javascript.png'
@@ -108,7 +109,7 @@ function Projects() {
       color: "#464b32",
       backgroundImage0: `${tfc0}`,
       backgroundImage: `${tfc1}`,
-      backgroundImage2: `${recipes2}`,
+      backgroundImage2: `${tfc2}`,
       backgroundImage3: `${recipes3}`,
     },
     {
